@@ -2,4 +2,62 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
+  --light-color: #00a7da;
+  --dark-color: #003650;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,300&family=Splash&display=swap');
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-image-block {
+  background-image: url('marc-kleen-BTECOzHzgps-unsplash.jpg');
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#image-credits {
+  color: white;
+}
+
+#image-credits a {
+  color: white;
+}
+
+.banner {
+  font-size: 4rem;
+  color: white;
+  margin-top: 300px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 620px;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Splash';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-form-block {
+  width: 60%;
+}
+
+.banner > img {
+  width: 128px;
+  height: 128px;
+}
+
+.banner > p {
+  display: inline;
 }
