@@ -151,3 +151,19 @@ input[type='tel']:invalid + span::after {
 .bottom-block button:active {
   background-color: var(--dark-color);
 }
+
+.bottom-block a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+.bottom-block a:hover {
+  border-bottom: 1px solid var(--dark-color);
+  border-top: 1px solid var(--dark-color);
+  color: var(--dark-color);
+}
+
+.bottom-block p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
