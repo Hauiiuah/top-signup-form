@@ -61,3 +61,22 @@ body {
 .banner > p {
   display: inline;
 }
+
+.top-block {
+  background-color: #f6f6f6;
+  height: 400px;
+}
+
+.top-block > p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 30px;
+  margin-inline: 50px;
+}
+.top-block > p:first-child {
+  padding-top: 250px;
+}
+
+.controls fieldset {
+  border: none;
+}
