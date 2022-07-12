@@ -76,75 +76,78 @@ body {
 }
 
 .controls fieldset {
-
   border: none;
   display: flex;
   flex-direction: column;
   width: 80%;
 }
 
-
-.controls{
+.controls {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 15px;
-
 }
 
-.middle-block{
+.middle-block {
   padding-inline: 50px;
   padding-block: 25px;
-  box-shadow:2px 2px 5px 0px #d5d5d5;
+  box-shadow: 2px 2px 5px 0px #d5d5d5;
 }
 
-.middle-block h2{
+.middle-block h2 {
   margin-bottom: 10px;
 }
 
-
-input{
+input {
   border: 1px solid lightgray;
   border-radius: 2px;
   height: 1.5rem;
   padding: 10px 5px;
 }
 
-
-input:focus-visible{
+input:focus-visible {
   outline: 1px solid blue;
   box-shadow: 2px 2px 5px 0px #d5d5d5;
 }
 
-input:invalid{
+input:invalid {
   outline: 1px solid red;
 }
 
-input[type="password"]:invalid + span::after{
-  content:'*Passwords do not match';
+.label {
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+input[type='password']:invalid + span::after {
+  content: '*Passwords do not match';
   font-size: 0.7rem;
-  color: red;
+  color: darkred;
 }
 
-input[type="tel"]:invalid + span::after{
-  content:'Format: xxx-xx-xxx'
+input[type='tel']:invalid + span::after {
+  content: 'Format: xxx-xx-xxx';
 }
 
-.bottom-block{
+.bottom-block {
   padding-inline: 50px;
   padding-block: 25px;
 }
 
-.bottom-block button{
+.bottom-block button {
   background-color: var(--light-color);
   border-radius: 5px;
   padding: 10px 30px;
-  color:white;
-  
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
   margin-bottom: 30px;
+  border: none;
+  box-shadow: 2px 2px 5px 0px #d5d5d5;
 }
 
-.bottom-block button:active{
+.bottom-block button:active {
   background-color: var(--dark-color);
-
 }
-
