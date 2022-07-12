@@ -7,8 +7,6 @@
   --dark-color: #003650;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,300&family=Splash&display=swap');
-
 body {
   display: flex;
   height: 100vh;
@@ -78,5 +76,75 @@ body {
 }
 
 .controls fieldset {
+
   border: none;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
+
+
+.controls{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 15px;
+
+}
+
+.middle-block{
+  padding-inline: 50px;
+  padding-block: 25px;
+  box-shadow:2px 2px 5px 0px #d5d5d5;
+}
+
+.middle-block h2{
+  margin-bottom: 10px;
+}
+
+
+input{
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  height: 1.5rem;
+  padding: 10px 5px;
+}
+
+
+input:focus-visible{
+  outline: 1px solid blue;
+  box-shadow: 2px 2px 5px 0px #d5d5d5;
+}
+
+input:invalid{
+  outline: 1px solid red;
+}
+
+input[type="password"]:invalid + span::after{
+  content:'*Passwords do not match';
+  font-size: 0.7rem;
+  color: red;
+}
+
+input[type="tel"]:invalid + span::after{
+  content:'Format: xxx-xx-xxx'
+}
+
+.bottom-block{
+  padding-inline: 50px;
+  padding-block: 25px;
+}
+
+.bottom-block button{
+  background-color: var(--light-color);
+  border-radius: 5px;
+  padding: 10px 30px;
+  color:white;
+  
+  margin-bottom: 30px;
+}
+
+.bottom-block button:active{
+  background-color: var(--dark-color);
+
+}
+

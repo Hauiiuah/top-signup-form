@@ -49,15 +49,17 @@
         </fieldset>
         <fieldset>
           <label for="phoneNumber">Phone Number</label>
-          <input type="text" name="phoneNumber" id="phoneNumber" />
+          <input type="tel" name="phoneNumber" id="phoneNumber" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" />
+          <span></span>
         </fieldset>
         <fieldset>
           <label for="password">Password</label>
-          <input type="password" name="password" id="password" />
+          <input type="password" name="password" id="password" required />
+          <span></span>
         </fieldset>
         <fieldset>
           <label for="confirmPassword">Confirm Password</label>
-          <input type="password" name="confirmPassword" id="confirmPassword" />
+          <input type="password" name="confirmPassword" id="confirmPassword" required/>
         </fieldset>
       </div>
     </div>
